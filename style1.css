@@ -1,59 +1,103 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-image: url('/storage/emulated/0/Download/TKD02.jpg');
-    background-repeat: repeat;
-    background-size: cover;
-    color: black;
-}
+<!DOCTYPE html>
+<html>
+<head>
+<title>PT.FORM - Login</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('TKD02.jpg');
+        background-repeat: repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
 
-h2 {
-    margin-top: 20px;
-    font-size: 2em;
-    font-weight: bold;
-}
+    h1 {
+        text-align: center;
+        margin-top: 40px;
+        color: black;
+    }
 
-hr {
-    border: 1px solid black;
-    margin: 10px auto;
-    width: 80%;
-}
+    hr {
+        border: none;
+        height: 2px;
+        background: black;
+        width: 80%;
+        margin: auto;
+    }
 
-nav {
-    background-color: transparent;
-    padding: 10px 0;
-}
+    .login-container {
+        background: rgba(255, 255, 255, 0.85);
+        max-width: 350px;
+        margin: 80px auto;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        text-align: left;
+    }
 
-nav a {
-    margin: 10px 15px;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s;
-}
+    label {
+        font-weight: bold;
+        display: block;
+        margin: 10px 0 5px;
+    }
 
-nav a:hover {
-    color: red;
-}
+    input[type="email"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
 
-.logo {
-    margin-top: 20px;
-}
+    input[type="submit"] {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
 
-.logo img {
-    width: 180px;
-    display: block;
-    margin: 0 auto;
-}
+    input[type="submit"]:hover {
+        background-color: gray;
+    }
 
-.tagline p {
-    max-width: 700px;
-    margin: 20px auto;
-    font-size: 1.2em;
-    line-height: 1.5;
-}
+    .signin-btn {
+        margin-top: 10px;
+        background-color: #555;
+    }
+
+    .signin-btn:hover {
+        background-color: #333;
+    }
+</style>
+</head>
+<body>
+
+    <h1>LOG IN</h1>
+    <hr>
+
+    <div class="login-container">
+        <form action="performance_task2.html" method="get">
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter email" required>
+
+            <label>Password:</label>
+            <input type="password" name="pswd" placeholder="Enter password" required>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <form action="PT_FORM_REGISTRATION.html" method="get">
+            <input type="submit" value="Sign In" class="signin-btn">
+        </form>
+    </div>
+
+</body>
+</html>
 
