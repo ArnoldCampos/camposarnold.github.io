@@ -13,18 +13,14 @@
     </style>
 </head>
 <body>
-
-    <!-- Login Form -->
     <form action="index2.html" style="text-align: right;">
         <input type="submit" value="Log In">
     </form>
-
-    <!-- Registration Form -->
     <form action="/action_page.php" method="post">
         <hr color="gray">
         <h1 style="text-align: center;">REGISTRATION FORM</h1>
         <hr color="gray">
-
+        <form action="/action_page.php" method="post">
         <label>Last Name:</label>
         <input type="text" name="lastname" required>
         <label>First Name:</label>
@@ -62,14 +58,14 @@
         <br><br>
 
         <label>SKILLS:</label>
-        <input type="checkbox" name="skills[]" value="Front Kick"> Front Kick
-        <input type="checkbox" name="skills[]" value="Roundhouse Kick"> Roundhouse Kick
-        <input type="checkbox" name="skills[]" value="Side Kick"> Side Kick
-        <br><br>
-        <input type="checkbox" name="skills[]" value="Back Kick"> Back Kick
-        <input type="checkbox" name="skills[]" value="Axe Kick"> Axe Kick
-        <input type="checkbox" name="skills[]" value="Spinning Hook Kick"> Spinning Hook Kick
-        <br><br>
+        <input type="checkbox"> <label>Front Kick</label>
+        <input type="checkbox"> <label>Roundhouse Kick</label>
+        <input type="checkbox"> <label>Side Kick</label><br>
+        <br>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> <label>Back Kick</label>
+         &nbsp;<input type="checkbox"> <label>Axe Kick</label>
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox"> <label>Spinning Hook Kick</label>
+    <br><br>
 
         <label>School:</label>
         <input type="text" name="school" required>
