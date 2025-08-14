@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('tkdbg.jpg');
+    background-repeat: repeat;
+    background-size: 1100px;
+    overflow-y: scroll;
+}
+h1 {
+    font-size: 2.5em;
+    margin: 15px 0;
+    color: black;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 10px 0;
+    color: black;
+}
+nav {
+    margin: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: red;
+}
+hr {
+    border: 1px solid black;
+}
+video {
+    width: 70%;
+    height: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin: 20px 0;
+}
+
