@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BLOG</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-image: url('/storage/emulated/0/Pictures/100PINT/Pins/tkdbg.jpg');
+        background-repeat: repeat;
+        background-size: 1100px;
+        overflow-y: scroll;
+    }
+    h1 {
+        font-size: 2.5em;
+        margin-top: 10px;
+        color: black;
+    }
+    h2 {
+        font-size: 2.0em;
+        margin-top: 10px;
+        color: black;
+    }
+</style>
+</head>
+<body>
+    <h1>TAEKWONDO BLOG</h1>
+    <hr style="border: 1px solid black;">
+
+    <h2>
+        <a href="file:///storage/emulated/0/DCIM/performance%20task%232.html?email=camposarnold78%40gmail.com&pswd=%2304142009">HOME</a>
+        <a href="file:///storage/emulated/0/DCIM/EVENTS.html">EVENTS</a>
+        <a href="file:///storage/emulated/0/DCIM/SERVICES.html">SERVICES</a>
+    </h2>
+
+    <hr style="border: 1px solid black;">
+    <br>
+
+    <video width="70%" height="70%" controls autoplay loop muted>
+        <source src="/storage/emulated/0/Download/tkdblog.mp4" type="video/mp4">
+        <source src="/storage/emulated/0/Download/tkdblog.webm" type="video/webm">
+        Your browser does not support the video tag.
+    </video>
+</body>
+</html>
+
