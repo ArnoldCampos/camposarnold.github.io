@@ -1,154 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>PT.FORM</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('/storage/emulated/0/Pictures/100PINT/Pins/TKD02.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('images/TKD02.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 20px;
+}
 
-        .login-btn {
-            text-align: right;
-            padding: 10px;
-        }
+h1 {
+    text-align: center;
+}
 
-        .login-btn input {
-            padding: 8px 15px;
-            background-color: black;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+hr {
+    border: 1px solid gray;
+}
 
-        .form-container {
-            background-color: rgba(255, 255, 255, 0.9);
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-        }
+label {
+    font-weight: bold;
+    margin-right: 5px;
+}
 
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+input[type="text"],
+input[type="date"] {
+    margin: 5px;
+    padding: 5px;
+}
 
-        label {
-            display: inline-block;
-            margin: 8px 5px;
-            font-weight: bold;
-        }
+input[type="submit"] {
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
-        input[type="text"],
-        input[type="date"] {
-            padding: 5px;
-            margin: 5px;
-            border: 1px solid #aaa;
-            border-radius: 5px;
-        }
-
-        .skills {
-            margin: 10px 0;
-        }
-
-        .skills label {
-            font-weight: normal;
-            margin-right: 15px;
-        }
-
-        input[type="submit"] {
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-
-        input[type="submit"]:hover {
-            background-color: red;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Log In Button -->
-    <div class="login-btn">
-        <form action="file:///storage/emulated/0/DCIM/PT.FORM-PSWD.html">
-            <input type="submit" value="Log In">
-        </form>
-    </div>
-
-    <!-- Registration Form -->
-    <div class="form-container">
-        <form action="/action_page.php" method="post">
-            <h1>REGISTRATION FORM</h1>
-            <hr color="gray">
-
-            <label>Last Name:</label>
-            <input type="text" name="lastname" required>
-            <label>First Name:</label>
-            <input type="text" name="firstname" required>
-            <label>M.I:</label>
-            <input type="text" name="mi" maxlength="10" required>
-            <br><br>
-
-            <label>Address:</label>
-            <input type="text" name="address" required>
-            <br><br>
-
-            <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required>
-            <label>Birth Place:</label>
-            <input type="text" name="birthplace" required>
-            <br><br>
-
-            <label>Gender:</label>
-            <input type="radio" id="male" name="gender" value="M" required>
-            <label for="male">M</label>
-            <input type="radio" id="female" name="gender" value="F" required>
-            <label for="female">F</label>
-            <br><br>
-
-            <label>Status:</label>
-            <input type="radio" name="status" value="S" required> S
-            <input type="radio" name="status" value="M" required> M
-            <input type="radio" name="status" value="W" required> W
-            <input type="radio" name="status" value="D" required> D
-            <br><br>
-
-            <div class="skills">
-                <label>SKILLS:</label><br>
-                <input type="checkbox"> <label>Front Kick</label>
-                <input type="checkbox"> <label>Roundhouse Kick</label>
-                <input type="checkbox"> <label>Side Kick</label><br><br>
-                <input type="checkbox"> <label>Back Kick</label>
-                <input type="checkbox"> <label>Axe Kick</label>
-                <input type="checkbox"> <label>Spinning Hook Kick</label>
-            </div>
-            <br>
-
-            <label>School:</label>
-            <input type="text" name="school" required>
-            <label>Name:</label>
-            <input type="text" name="name" required>
-            <label>Yr. Graduated:</label>
-            <input type="text" name="yrgraduated" required>
-            <br><br>
-
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-
-</body>
-</html>
