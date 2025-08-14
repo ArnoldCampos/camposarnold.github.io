@@ -1,89 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>PT.FORM-PSWD</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif, monospace;
-            background-color: white;
-            text-align: center;
-            background-image: url('/storage/emulated/0/Pictures/100PINT/Pins/TKD02.jpg');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image: url('images/TKD02.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+}
 
-        .login-container {
-            background-color: rgba(255, 255, 255, 0.9);
-            width: 350px;
-            margin: 80px auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.3);
-        }
+h2 {
+    margin-top: 20px;
+    font-size: 2em;
+    color: black;
+}
 
-        h1 {
-            margin-bottom: 20px;
-        }
+hr {
+    border: 1px solid black;
+}
 
-        label {
-            display: block;
-            margin: 10px 0 5px;
-            font-weight: bold;
-        }
+h3 a {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
 
-        input[type="email"],
-        input[type="password"] {
-            width: 90%;
-            padding: 8px;
-            margin-bottom: 15px;
-            border: 1px solid #aaa;
-            border-radius: 5px;
-        }
+.logo {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
 
-        input[type="submit"] {
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-            margin-top: 5px;
-        }
+.logo img {
+    width: 180px;
+}
 
-        input[type="submit"]:hover {
-            background-color: red;
-        }
+.tagline {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color: black;
+}
 
-        .signin-btn {
-            margin-top: 15px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="login-container">
-        <h1>LOG IN</h1>
-        <hr>
-
-        <form action="file:///storage/emulated/0/DCIM/performance%20task%232.html" method="GET">
-            <label>Email:</label>
-            <input type="email" name="email" placeholder="Enter email" required>
-
-            <label>Password:</label>
-            <input type="password" name="pswd" placeholder="Enter password" required>
-
-            <input type="submit" value="Submit">
-        </form>
-
-        <form action="file:///storage/emulated/0/DCIM/PT.FORM%20REGISTRATION.html" class="signin-btn">
-            <input type="submit" value="Sign In">
-        </form>
-    </div>
-
-</body>
-</html>
